@@ -25,65 +25,45 @@ In your project's Gruntfile, add a section named `riot_compile` to the data obje
 ```js
 grunt.initConfig({
   riot_compile: {
-    options: {
-      // Task-specific options go here.
-    },
     your_target: {
-      // Target-specific file lists and/or options go here.
+      coffee: some_path,
+      html: some_other_path,
+      dest: another_path
     },
   },
 });
 ```
+
+**Dependencies:**
+ riot@2.4.1
+ coffee-script@1.11.0
 
 ### Options
 
-#### options.separator
+*None yet*
+
+
+### Properties
+
+#### coffee
 Type: `String`
-Default value: `',  '`
 
-A string value that is used to do something with whatever.
+Path to the folder containing coffeescript files.
 
-#### options.punctuation
+#### html
 Type: `String`
-Default value: `'.'`
 
-A string value that is used to do something else with whatever else.
+Path to the folder containing HTML templates.
 
-### Usage Examples
+#### dest
+Type: `String`
 
-#### Default Options
-In this example, the default options are used to do something with whatever. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result would be `Testing, 1 2 3.`
+Path to the folder where tags will be saved.
 
-```js
-grunt.initConfig({
-  riot_compile: {
-    options: {},
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
-  },
-});
-```
-
-#### Custom Options
-In this example, custom options are used to do something else with whatever else. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result in this case would be `Testing: 1 2 3 !!!`
-
-```js
-grunt.initConfig({
-  riot_compile: {
-    options: {
-      separator: ': ',
-      punctuation: ' !!!',
-    },
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
-  },
-});
-```
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
-_(Nothing yet)_
+
+* 2016-09-26: [v2.4.1](https://github.com/Swaven/grunt-riot-compile/releases/tag/v2.4.1): first release

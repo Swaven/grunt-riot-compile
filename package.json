@@ -1,7 +1,7 @@
 {
   "name": "grunt-riot-compile",
-  "description": "Compiles riot tags from HTML and coffeescript",
-  "version": "0.1.0",
+  "description": "Compiles riot tags from separate HTML and coffeescript files",
+  "version": "2.4.1",
   "homepage": "https://github.com/Swaven/grunt-riot-compile",
   "author": {
     "name": "Swaven",
@@ -30,13 +30,18 @@
     "grunt-contrib-jshint": "^0.9.2",
     "grunt-contrib-clean": "^0.5.0",
     "grunt-contrib-nodeunit": "^0.3.3",
-    "grunt": "~0.4.5"
-  },
-  "peerDependencies": {
-    "grunt": ">=0.4.0"
+    "grunt": ">=0.4.5"
   },
   "keywords": [
     "gruntplugin",
-    "riotjs", "riot.js"
-  ]
+    "riotjs",
+    "riot.js"
+  ],
+  "peerDependencies": {
+    "grunt": ">=0.4.5"
+  },
+  "dependencies": {
+    "coffee-script": "1.11.0",
+    "riot": "2.4.1"
+  }
 }
