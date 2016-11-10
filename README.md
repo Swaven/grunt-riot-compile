@@ -35,7 +35,7 @@ grunt.initConfig({
 ```
 
 **Dependencies:**  
- - riot@2.6.5
+ - riot@2.6.7
  - coffee-script@1.11.1
 
 ### Options
@@ -65,6 +65,7 @@ Path to the folder where tags will be saved.
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
+* 2016-11-10: [v2.6.7](https://github.com/Swaven/grunt-riot-compile/releases/tag/v2.6.7): use riot 2.6.7
 * 2016-11-02: [v2.6.5](https://github.com/Swaven/grunt-riot-compile/releases/tag/v2.6.5): use riot 2.6.5
 * 2016-10-05: [v2.6.2-2](https://github.com/Swaven/grunt-riot-compile/releases/tag/v2.6.2-2): use coffee-script 1.11.1
 * 2016-09-28: [v2.6.2](https://github.com/Swaven/grunt-riot-compile/releases/tag/v2.6.2): use riot 2.6.2
