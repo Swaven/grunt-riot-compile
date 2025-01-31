@@ -42,6 +42,6 @@
   },
   "dependencies": {
     "coffee-script": "1.11.1",
-    "riot": "2.6.7"
+    "riot": "2.6.9"
   }
 }
